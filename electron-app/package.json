@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager . InfomuxFinal --platform=darwin,win32,linux --arch=x64 --out=dist"
+    "package:mac": "electron-packager . InfomuxFinal --platform=darwin --arch=x64 --out=dist --overwrite --icon=assets/icon.icns --app-version=2.0.0",
+    "package:win": "electron-packager . InfomuxFinal --platform=win32 --arch=x64 --out=dist --overwrite --icon=assets/icon.ico --app-version=2.0.0",
+    "package:linux": "electron-packager . InfomuxFinal --platform=linux --arch=x64 --out=dist --overwrite --app-version=2.0.0"
   },
   "keywords": ["electron", "animations", "IA", "js", "html", "css"],
   "author": "Dev : milaslevrai | Dark : darkolevrai",
