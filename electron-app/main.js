@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+require('dotenv').config(); // Charger la clé API
 
 function createWindow() {
     const win = new BrowserWindow({
@@ -18,3 +19,6 @@ app.whenReady().then(createWindow);
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit();
 });
+
+// Exemple : afficher la clé API (pour debug, peut retirer après)
+console.log("Clé API chargée :", process.env.API_KEY);
