@@ -1,29 +1,30 @@
-const askBtn = document.getElementById('askBtn');
-const input = document.getElementById('input');
-const output = document.getElementById('output');
+import { drawAura } from './aura.js';
+import { drawGlow } from './glow.js';
+import { drawLiquidGradient } from './liquid-gradient.js';
 
-askBtn.addEventListener('click', async () => {
-  const prompt = input.value;
-  output.textContent = 'Réponse en cours...';
-  
-  const API_KEY = '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'; // Remplacer par votre clé
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
 
-  try {
-    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${API_KEY}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        model: 'llama3-70b-versatile',
-        messages: [{ role: 'user', content: prompt }]
-      })
-    });
-    const data = await response.json();
-    output.textContent = data.choices[0].message.content;
-  } catch (err) {
-    output.textContent = 'Erreur : ' + err.message;
-  }
-});
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Dessiner toutes les animations
+drawLiquidGradient(ctx);
+drawAura(ctx);
+drawGlow(ctx);
+
+// Exemple d'utilisation de l'IA
+async function testIA() {
+    const apiKey = process.env.API_KEY;
+    if (!apiKey) return console.error("API_KEY non définie");
+
+    // Exemple de fonction IA
+    console.log("Clé API pour IA prête à l’emploi :", apiKey);
+}
+
+testIA();
 
