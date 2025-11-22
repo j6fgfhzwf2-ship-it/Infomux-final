@@ -1,45 +1,51 @@
-# Infomux
+# Infomux Final IA v2
 
-Ia gratuite avec animation  
-Ce projet contient des animations interactives et un rendu visuel dynamique avec Electron.
+Projet Electron avec IA et animations interactives.  
+Cette version est entièrement fonctionnelle et sécurisée pour l’utilisation de l’API IA.
+
+---
+
+## 🌐 Site web
+Lien : [à compléter](#)
+
+---
+
+## 👤 Contact Discord
+- Dev : `milaslevrai`  
+- Dark : `darkolevrai`
 
 ---
 
 ## 📂 Structure du projet
 
-- `animations/` – dossiers pour vos animations  
-- `aura.js`, `glow.js`, `liquid-gradient.js` – fichiers JS pour les effets visuels  
-- `electron-app/` – configuration et build Electron  
-- `renderer/` – fichiers côté rendu  
-- `index.html` – page principale  
-- `script.js` – script côté rendu  
-- `style.css` – styles de l’application  
+- `animations/` – dossier contenant des animations supplémentaires (optionnel)  
+- `aura.js` – animation “aura”  
+- `glow.js` – animation “glow”  
+- `liquid-gradient.js` – animation “liquid gradient”  
+- `electron-app/` – configuration ou build Electron (optionnel)  
+- `renderer/` – fichiers côté rendu (optionnel)  
+- `index.html` – page principale affichée par Electron  
+- `script.js` – script principal côté rendu pour les animations et IA  
+- `style.css` – styles  
 - `main.js` – script principal d’Electron  
-- `preload.js` – préchargement sécurisé pour le renderer  
-- `package.json` – dépendances et configuration du projet  
+- `preload.js` – préchargement sécurisé  
+- `package.json` – configuration et scripts  
 - `.gitignore` – fichiers à ignorer  
+- `.env` – contient la clé API (**à ne jamais pousser**)  
 - `README.md` – documentation
 
 ---
 
-## ⚡ Installation
+## ⚡ Installation et lancement
 
 1. **Cloner le dépôt :**
 
 ```bash
-git clone https://github.com/votre-utilisateur/nom-du-depot.git
-cd nom-du-depot
-Installer les dépendances Node :
+git clone https://github.com/TON_UTILISATEUR/Infomux-final-ia-infomux.git
+cd Infomux-final-ia-infomux
+Créer un fichier .env avec votre clé API :
+API_KEY=ta_cle_api_ici
+Installer les dépendances Node et Electron :
 npm install
-Lancer l’application Electron :
+Lancer l’application :
 npm start
-Assurez-vous d’avoir Node.js et npm installés sur votre machine.
-🎨 Utilisation
-Le projet contient plusieurs animations (aura, glow, liquid-gradient)
-Vous pouvez modifier ou ajouter vos propres animations dans les fichiers correspondants
-Le rendu est visible dans index.html via Electron
-🌐 Site web
-Lien vers le site : à compléter
-👤 Contact Discord
-Dev : milaslevrai
-Dev : darkolevrai
