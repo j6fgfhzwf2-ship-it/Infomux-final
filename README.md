@@ -1,41 +1,45 @@
 # Infomux
 
-Infomux est un assistant IA avec animation style Apple Intelligence, prêt à utiliser sur Mac ou Windows.  
-L’IA est hébergée en ligne, donc les utilisateurs n’ont rien à installer.
+Ia gratuite avec animation  
+Ce projet contient des animations interactives et un rendu visuel dynamique avec Electron.
 
-## Fonctionnalités
+---
 
-- Animation lumineuse type Apple Intelligence
-- Texte central
-- Connexion à une IA via un hébergement web
-- Compatible Mac & Windows
-- Gratuit et open-source
+## 📂 Structure du projet
 
-## Structure du projet
+- `animations/` – dossiers pour vos animations  
+- `aura.js`, `glow.js`, `liquid-gradient.js` – fichiers JS pour les effets visuels  
+- `electron-app/` – configuration et build Electron  
+- `renderer/` – fichiers côté rendu  
+- `index.html` – page principale  
+- `script.js` – script côté rendu  
+- `style.css` – styles de l’application  
+- `main.js` – script principal d’Electron  
+- `preload.js` – préchargement sécurisé pour le renderer  
+- `package.json` – dépendances et configuration du projet  
+- `.gitignore` – fichiers à ignorer  
+- `README.md` – documentation
 
-Infomux/
-├── src/app.py # Script principal PyQt5
-├── assets/ # Icônes et fichiers supplémentaires
-├── web_ai/ # Interface web IA
-│ ├── index.html
-│ ├── script.js
-│ └── style.css
-├── requirements.txt
-└── README.md
+---
 
-## Installation et lancement
+## ⚡ Installation
 
-1. Cloner le dépôt
+1. **Cloner le dépôt :**
 
 ```bash
-git clone https://github.com/tonpseudo/Infomux.git
-cd Infomux
-
-## Créer un environnement Python et installer les dépendances
-python3 -m venv env
-source env/bin/activate   # Mac/Linux
-env\Scripts\activate      # Windows
-pip install -r requirements.txt
-
-## Lancer l’application
-python src/app.py
+git clone https://github.com/votre-utilisateur/nom-du-depot.git
+cd nom-du-depot
+Installer les dépendances Node :
+npm install
+Lancer l’application Electron :
+npm start
+Assurez-vous d’avoir Node.js et npm installés sur votre machine.
+🎨 Utilisation
+Le projet contient plusieurs animations (aura, glow, liquid-gradient)
+Vous pouvez modifier ou ajouter vos propres animations dans les fichiers correspondants
+Le rendu est visible dans index.html via Electron
+🌐 Site web
+Lien vers le site : à compléter
+👤 Contact Discord
+Dev : milaslevrai
+Dev : darkolevrai
