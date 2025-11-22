@@ -6,7 +6,7 @@ askBtn.addEventListener('click', async () => {
   const prompt = input.value;
   output.textContent = 'Réponse en cours...';
   
-  const API_KEY = 'TA_CLE_GROQ_ICI'; // Remplacer par votre clé
+  const API_KEY = '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'; // Remplacer par votre clé
 
   try {
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
