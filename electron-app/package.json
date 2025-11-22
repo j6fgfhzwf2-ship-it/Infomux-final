@@ -1,18 +1,20 @@
 {
   "name": "infomux-final-ia-infomux",
-  "version": "1.0.0",
-  "description": "Projet Electron avec animations interactives (aura, glow, liquid-gradient)",
+  "version": "2.0.0",
+  "description": "Projet Electron v2 avec IA et animations interactives",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "start": "electron .",
     "package": "electron-packager . InfomuxFinal --platform=darwin,win32,linux --arch=x64 --out=dist"
   },
-  "keywords": ["electron", "animations", "js", "html", "css"],
+  "keywords": ["electron", "animations", "IA", "js", "html", "css"],
   "author": "Dev : milaslevrai | Dark : darkolevrai",
   "license": "MIT",
   "devDependencies": {
     "electron": "^26.2.0",
-    "electron-packager": "^17.1.0"
+    "electron-packager": "^17.1.0",
+    "dotenv": "^16.3.1"
   },
   "dependencies": {}
 }
